@@ -1,0 +1,605 @@
+.overall-image {
+  padding: 100px 30px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+}
+
+.seling-image {
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px 10px 0px 0px;
+}
+.seling-image img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 10px 0px 0px;
+}
+.sale-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sale-info h4 {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  top: 260px;
+  color: rgba(255, 255, 255, 0.573);
+  display: none;
+  opacity: 0;
+  transition: all 1s;
+  cursor: pointer;
+}
+.sale-info h4:hover {
+  color: coral;
+}
+.seling-image:hover .sale-info h4 {
+  opacity: 1;
+  display: block;
+}
+.buy-icon {
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.44);
+  padding: 10px;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.546);
+  position: absolute;
+  top: 215px;
+  cursor: pointer;
+  opacity: 0;
+  /* display: none; */
+  transition: all 1.2s;
+}
+.seling-image:hover .buy-icon {
+  opacity: 1;
+}
+.buy-icon .fa-cart-shopping:hover {
+  color: blue;
+}
+.buy-icon .fa-heart:hover {
+  color: red;
+}
+.sale-info h3 {
+  font-weight: 500;
+  height: 80px;
+  font-size: 18px;
+  padding: 10px 0px;
+  text-align: center;
+}
+.details-price {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.details-price p:first-child {
+  color: green;
+}
+.details-price p:nth-child(2) {
+  font-size: 18px;
+  font-weight: bold;
+}
+.details-price p:nth-child(2) del {
+  font-size: 15px;
+  color: gray;
+}
+.details-price p:nth-child(3) {
+  color: gray;
+}
+.details-price p:nth-child(3) span {
+  color: green;
+}
+.about {
+  padding: 20px 10px;
+}
+.about-container {
+  padding: 130px 0px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-container h1 {
+  font-size: 55px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+.about-container p {
+  width: 800px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.sub-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10px;
+}
+.sub-about img {
+  height: 600px;
+  width: 700px;
+  border-radius: 10px;
+}
+.about-para {
+  /* width:400px; */
+  padding: 50px;
+}
+.about-para h2 {
+  font-size: 40px;
+  font-weight: 400;
+  /* padding-bottom: 30px; */
+}
+.about-para p {
+  line-height: 1.5;
+  padding-top: 30px;
+}
+.about-box {
+  flex-direction: row-reverse;
+}
+.map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.map h1 {
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.map h1 span {
+  color: orangered;
+}
+.map p {
+  width: 800px;
+  line-height: 1.5;
+  text-align: center;
+}
+.map img {
+  padding: 40px 0px;
+  transition: all 1s;
+}
+.about-last {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-last h1 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+.about-last h1 span {
+  color: crimson;
+  font-weight: bold;
+}
+.about-last p {
+  width: 1000px;
+  padding-bottom: 20px;
+  line-height: 1.5;
+  font-size: 18px;
+  text-align: center;
+}
+.about-payment {
+  width: 100%;
+  padding: 30px;
+  border: 10px double rgb(237, 231, 231);
+  border-radius: 10px;
+}
+.about-payment img {
+  width: 100%;
+  box-shadow: 2px 2px 3px gray, -2px -2px 3px gray;
+  border-radius: 10px;
+}
+.shop-location {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shop-location h1 {
+  font-size: 40px;
+  font-weight: 500;
+  padding: 20px;
+  text-shadow: 1px 1px 3px gray, -1px -1px 3px gray;
+}
+.iframe-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iframe-content p {
+  width: 50%;
+  padding: 30px;
+  text-align: center;
+  line-height: 1.5;
+}
+iframe {
+  border-radius: 10px;
+  height: 400px;
+  width: 500px;
+}
+marquee {
+  font-size: 50px;
+  padding: 20px;
+  color: crimson;
+  text-shadow: 2px 2px 3px gray, -2px -2px 3px gray;
+}
+/* contect us design */
+.contect-us {
+  padding: 100px 0px;
+  display: flex;
+}
+.contect-head {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-right: 2px solid gray;
+}
+.contect-head h1 {
+  font-weight: 500;
+  color: crimson;
+  text-align: start;
+}
+label {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 0px;
+  color: coral;
+}
+input {
+  width: 400px;
+  padding: 5px 0px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+textarea {
+  width: 400px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+::placeholder {
+  padding-left: 10px;
+  font-size: 15px;
+}
+/* icon information design */
+.icon-contect {
+  width: 60%;
+  padding: 20px;
+}
+.icon-contect-info {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 100px 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10px;
+}
+form button {
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  padding: 8px 30px;
+  margin-top: 10px;
+}
+.icon-contect-info .icon1 {
+  display: flex;
+  gap: 10px;
+  /* justify-content: center;
+        align-items: center; */
+}
+.icon-contect h1 {
+  font-weight: 500;
+  color: crimson;
+  padding: 0px 0px 20px 0px;
+  text-align: center;
+}
+.icon1 {
+  width: 300px;
+}
+.icon1 i {
+  font-size: 50px;
+  color: gray;
+}
+.icon1 p {
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 600;
+}
+.icon1 p span {
+  font-size: 16px;
+  padding-left: 2px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .overall-image {
+    padding: 100px 0px;
+    grid-template-columns: auto;
+  }
+  .about {
+    padding: 20px 0px;
+  }
+  .about-container h1 {
+    font-size: 31px;
+    font-weight: 400;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .about-container p {
+    width: 100%;
+  }
+  .sub-about {
+    flex-direction: column;
+    padding: 50px 0px;
+  }
+  .sub-about img {
+    height: 300px;
+    width: 90%;
+    border-radius: 10px;
+  }
+  .about-para {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .about-para h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .about-para p {
+    line-height: 1.5;
+    padding-top: 30px;
+  }
+  .map h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .map p {
+    width: 100%;
+    text-align: center;
+  }
+  .map img {
+    width: 90%;
+  }
+  .about-last h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .about-last p {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+  .iframe-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-payment {
+    width: 100%;
+    padding: 30px;
+    border: none;
+  }
+  .shop-location h1 {
+    font-size: 30px;
+  }
+  iframe {
+    width: 90%;
+  }
+  .iframe-content p {
+    width: 100%;
+    padding: 30px 10px;
+  }
+  marquee {
+    font-size: 30px;
+  }
+  input {
+    width: 100%;
+  }
+  .contect-us {
+    flex-direction: column;
+  }
+  textarea {
+    width: 100%;
+  }
+  .contect-head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    border-right: none;
+  }
+  .icon-contect-info {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 50px 0px;
+    justify-content: start;
+  }
+  form {
+    width: 90%;
+  }
+  .icon-contect {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .icon1 {
+    width: 100%;
+}
+  .icon1 p {
+    width: 100%;
+  }
+  .icon-contect-info .icon1 {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .overall-image {
+    padding: 100px 0px;
+    grid-template-columns: auto auto;
+  }
+  .seling-image {
+    width: 250px;
+  }
+  .about-container p {
+    width: 90%;
+  }
+  .sub-about {
+    flex-direction: column;
+    padding: 50px 0px;
+  }
+  .sub-about img {
+    width: 90%;
+  }
+  .about-para {
+    width: 90%;
+    text-align: center;
+    padding: 30px 0px;
+  }
+  .about-box {
+    flex-direction: column;
+  }
+  .map p {
+    width: 90%;
+  }
+  .map img {
+    width: 90%;
+    padding: 30px 0px;
+  }
+  .about-last p {
+    width: 90%;
+  }
+  .shop-location h1 {
+    font-size: 30px;
+  }
+  .iframe-content {
+    display: flex;
+    flex-direction: column;
+  }
+  iframe {
+    width: 90%;
+  }
+  .iframe-content p {
+    width: 100%;
+    padding: 30px 10px;
+  }
+  marquee {
+    font-size: 30px;
+  }
+  input {
+    width: 100%;
+  }
+  .contect-us {
+    flex-direction: column;
+  }
+  textarea {
+    width: 100%;
+  }
+  .contect-head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    border-right: none;
+  }
+  .icon-contect-info {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 50px;
+    padding: 50px 0px;
+  }
+  form {
+    width: 50%;
+  }
+  .icon-contect {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .icon1 p {
+    width: 50%;
+  }
+  .icon-contect-info .icon1 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .overall-image {
+    padding: 100px 0px;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+  }
+  .about-container p {
+    width: 90%;
+  }
+  .sub-about {
+    flex-direction: column;
+    padding: 50px 0px;
+  }
+  .sub-about img {
+    width: 90%;
+  }
+  .about-para {
+    width: 90%;
+    text-align: center;
+    padding: 30px 0px;
+  }
+  .about-box {
+    flex-direction: column;
+  }
+  .map p {
+    width: 90%;
+  }
+  .map img {
+    width: 90%;
+    padding: 30px 0px;
+  }
+  .about-last p {
+    width: 90%;
+  }
+  .contect-head {
+    width: 50%;
+    border-right:1px solid lightgrey;
+  }
+  .icon-contect {
+    width: 50%;
+  }
+  .icon-contect-info {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
